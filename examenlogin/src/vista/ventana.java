@@ -52,6 +52,9 @@ public class ventana extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setForeground(new java.awt.Color(0, 51, 204));
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 204));
 
         jLabel1.setText("Usuario:");
 
