@@ -6,7 +6,9 @@
 package examenlogin.controlador;
 
 import loginDAO.loginDAO;
+import loginDAO.usuarioDAO;
 import modelo.login;
+import modelo.usuario;
 
 /**
  *
@@ -15,7 +17,7 @@ import modelo.login;
 public class controlador {
     
     private  loginDAO dao = new loginDAO();    
-    
+    private  usuarioDAO daos = new usuarioDAO();
     
     public void crear(login l){
         int resultado= dao.create(l);
@@ -23,8 +25,13 @@ public class controlador {
         if(resultado ==1){
             System.out.println("registro el estudiante");
         }
-  
-        
+    }
+    public void crearUsuario(usuario u){
+        int resultado= daos.create(u);
+       
+        if(resultado ==1){
+            System.out.println("registro el estudiante");
+        }
     }
     
 }
